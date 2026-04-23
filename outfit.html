@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outfit Suggestion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header> 
+    <div class="logo"> 
+        <inline style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Fashion Hub Logo" height="100px" width="100px"   style="margin-right: 10px;">
+        <h1>Fashion Hub</h1>
+        </inline>
+    </div></header>
+
+
+<nav>
+    <div>
+        <a href="home.html">Home</a>
+        <a href="outfit.html">Outfit</a>
+        <a href="color.html">Colors</a>
+    </div>
+</nav>
+<div class="outfit">
+<div class="container">
+    <h1>Outfit Suggestion </h1>
+<select id="weather" name="Weather">
+        <option value="">Select Weather</option>
+        <option value="hot">Summer</option>
+        <option value="cold">Winter</option>
+        <option value="rainy">Rainy</option>
+    </select>
+    
+    <select id="occasion" name="Occasion" >
+        <option value="">Select Occasion</option>
+        <option value="college">College</option>
+        <option value="party">Party</option>
+        <option value="casual">Casual</option>
+    </select>
+
+    
+
+    <button onclick="suggestOutfit()">Suggest</button>
+
+    <p id="result"></p>
+    <img id="outfitImage" width="250">
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
